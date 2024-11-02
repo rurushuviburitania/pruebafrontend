@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="inventario.html">Inventario</a>
+                        <a class="nav-link" href="pqrs.html">PQRS</a>
+                    </div>
+                
+                </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main class="container">
+        <section class="contenedor">
+            <section class="products">
+                <h2>Productos Disponibles</h2>
+                <div class="product-list" id="product">
+                    <div class="product">
+                        <h3>Nombre</h3>
+                        <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+                        <h5>Codigo</h5>
+                        <h5>Stock</h5>
+                        <h4>Precio</h4>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <!-- <h3 id="nombre">CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+                        <p id="descripcion">Ingrese la descripcion</p>
+                        <p id="codigo">Ingrese el codigo</p>
+                        <p id="stock">Ingrese el stock</p>
+                        <p id="precio">Ingrese el precio</p>
+                        <p id="laboratorio">Ingrese el laboratorio</p>
+                        <p id="ima">Ingrese el imagen</p> -->
+                        
+                    </div>
+
+                    <div class="product">
+                        <h3 id="nombre">CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+                        <p id="descripcion">Ingrese la descripcion</p>
+                        <p id="codigo">Ingrese el codigo</p>
+                        <p id="stock">Ingrese el stock</p>
+                        <p id="precio">Ingrese el precio</p>
+                        <p id="laboratorio">Ingrese el laboratorio</p>
+                        <p id="ima">Ingrese el imagen</p>
+                        <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+                        <p>$270.00</p>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <tbody id="inventario-tablee">
+                        </tbody>
+                    </div>
+
+                    
+                    <div class="product">
+                        <section class="container">
+                            <table class="table">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Stock</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Laboratorio</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="inventario-table">
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+
+                    
+
+                </div>
+            </section>
+        
+            <section class="cart">
+                <h2>Tu Carrito</h2>
+                <ul id="cart-items">
+                    <p>Aún no has añadido productos.</p>
+                </ul>
+                <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+                <button id="pay-cart" class="action-btn">Pagar</button>
+                <button id="cancel-cart" class="action-btn">Cancelar</button>
+            </section>
+        </section>
+    </main>
+
+    <!-- <section class="container">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Producto</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Código</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Laboratorio</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventario-table">
+            </tbody>
+        </table>
+    </section> -->
+
+    <script src="js/request.js"></script>
+    <script src="js/inventario.js"></script>
+    
+    <script>
+        window.onload = function() {
+        // Llama a la función que carga todos los productos al cargar la página
+        mostrarProductos();
+        
+    }
+    </script>
+
+    <footer class="footer">
+        <p>© VetMed Designed by Sergio Chaux</p>
+    </footer>
+</body>
+
+</html>
+
+
+<!-- <div class="product">
+    <h3>CORSAIR VENGEANCE RGB DDR5 RAM 64GB (2x32GB) 6400MHz CL32 Intel XMP iCUE Compatible Computer Memory - Black (CMH64GX5M2B6400C32)</h3>
+    <img src="https://m.media-amazon.com/images/I/51c+p6RY+AL._AC_UY218_.jpg" alt="Imagen de Producto 1">
+    <p>$270.00</p>
+    <button class="add-to-cart">Añadir al carrito</button>
+</div> -->
