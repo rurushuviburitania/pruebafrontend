@@ -18,7 +18,7 @@ function mostrarProductos(){
             <td>${element.fechaVencimiento}</td>
             <td>${element.ima}</td>
             <td>
-                <button type="button" class="btn btn-primary w-auto" onclick="window.location ='/formProductos.html?id=${element._id}'">Editar</button>
+                <button type="button" class="btn btn-primary w-auto" onclick="window.location ='/formProductosEdit.html?id=${element._id}'">Editar</button>
                 <button type="button" class="btn btn-danger w-auto" onclick='deleteProductos("${element._id}")'>Eliminar</button>
             </td>
         </tr>
