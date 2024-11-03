@@ -8,5 +8,3 @@ function sendRequest(endPoint, method, data){
     request.send(data ? JSON.stringify(data): data);
     return request
 }
-
-
